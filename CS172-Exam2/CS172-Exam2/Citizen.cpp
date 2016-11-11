@@ -41,5 +41,5 @@ string Citizen::getFavoriteColor()
 //defines a function that sets the citizen's favorite color
 void Citizen::setFavoriteColor(string color)
 {
-    
+    color1=color;
 }

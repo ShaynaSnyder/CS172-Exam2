@@ -12,6 +12,7 @@ using namespace std;
 //defines a function that creates a City object with given name
 City::City(string cityName)
 {
+    cityName = cityName1;
     population = 0;
     string fileName = cityName + ".txt";
     fstream cityFile;
@@ -20,7 +21,9 @@ City::City(string cityName)
     string firstName, lastName, color, line;
     while(getline(cityFile, line))
     {
-        
+        Citizen* tempCitizen = new Citizen(id, firstName, lastName, color);
+        addCitizen(tempCitizen);
+        delete tempCitizen;
     }
     cityFile.close();
 }
@@ -32,7 +35,7 @@ City::~City()
 //defines a function that returns the city's name
 string City::getCityName()
 {
-    return cityName;
+    return cityName1;
 }
 //defines a function that returns the number of citizens in the city
 int City::populationSize()
@@ -42,7 +45,18 @@ int City::populationSize()
 //defines a function that returns the citizen at the given index
 Citizen* City::getCitizenAtIndex(int index)
 {
-    
+    return &(citizens[index]);
+}
+//defines a function that adds a citizen to the city
+void City:: addCitizen(Citizen* citizen)
+{
+    citizens.push_back(citizen);
+    population++;
+}
+//defines a function that returns the citizen with given id
+Citizen* City::getCitizenWithId(int id)
+{
+    return &(citizens[id]);
 }
 //defines a function that returns a vector of citizens with given favorite color
 vector<Citizen*> City::getCitizensForFavoriteColor(string color)
