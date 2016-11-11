@@ -38,7 +38,7 @@ City::City(string cityName)
 //defines a function that destroys a city
 City::~City()
 {
-    delete [] citizens;
+    //delete [] citizens;
 }
 //defines a function that returns the city's name
 string City::getCityName()
@@ -71,5 +71,11 @@ Citizen* City::getCitizenWithId(int id)
 //defines a function that returns a vector of citizens with given favorite color
 vector<Citizen*> City::getCitizensForFavoriteColor(string color)
 {
-    
+    vector<Citizen*> matchingColors;
+    for(int i=0; i<citizens.size(); i++)
+    {
+        if(citizens[i].getFavoriteColor()==color)
+            matchingColors.push_back(&citizens[i]);
+    }
+    return matchingColors;
 }
