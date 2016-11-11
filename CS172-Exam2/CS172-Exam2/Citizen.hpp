@@ -35,8 +35,8 @@ public:
     void setFavoriteColor(string color);
     
 private:
-    int id1;
-    string firstName1, lastName1, color1;
+    int id;
+    string firstName, lastName, color;
     
 };
 #endif /* Citizen_hpp */

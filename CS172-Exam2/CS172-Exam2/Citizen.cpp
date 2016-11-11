@@ -8,38 +8,42 @@ using namespace std;
 //defines function that creates a new Citizen object with the passed in data
 Citizen::Citizen(int id, string firstName, string lastName, string color)
 {
-    id1 = id;
-    firstName1 = firstName;
-    lastName1 = lastName;
-    color1 = color;
+    //sets values of Citizen object variables equal to the data values
+    this->id = id;
+    this->firstName = firstName;
+    this->lastName = lastName;
+    this->color = color;
 }
 //defines a function that creates a new Citizen object by copying data from passed in citizen
 Citizen::Citizen(Citizen* citizen)
 {
-    
+    id = citizen->id;
+    firstName = citizen->firstName;
+    lastName = citizen->lastName;
+    color = citizen->color;
 }
 //defines a function that returns the citizen's first name
 string Citizen::getFirstName()
 {
-    return firstName1;
+    return firstName;
 }
 //defines a function that returns the citizen's last name
 string Citizen::getLastName()
 {
-    return lastName1;
+    return lastName;
 }
 //defines a function that returns the citizen's id
 int Citizen::getId()
 {
-    return id1;
+    return id;
 }
 //defines a function that returns the citizen's favorite color
 string Citizen::getFavoriteColor()
 {
-    return color1;
+    return color;
 }
 //defines a function that sets the citizen's favorite color
 void Citizen::setFavoriteColor(string color)
 {
-    color1=color;
+    this->color=color;
 }
