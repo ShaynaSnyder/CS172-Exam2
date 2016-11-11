@@ -5,7 +5,6 @@
 #include <vector>
 #include "City.hpp"
 #include "Citizen.hpp"
-
 using namespace std;
 
 //defines a function that creates a City object with given name
@@ -21,20 +20,20 @@ City::~City()
 //defines a function that returns the city's name
 string City::getCityName()
 {
-    
+    return cityName;
 }
 //defines a function that returns the number of citizens in the city
 int City::populationSize()
 {
-    
+    return population;
 }
 //defines a function that returns the citizen at the given index
-Citizen* City::getCitizenAtIndex(int index)
-{
+//Citizen* City::getCitizenAtIndex(int index)
+//{
     
-}
+//}
 //defines a function that returns a vector of citizens with given favorite color
-vector<Citizen*> City::getCitizensForFavoriteColor(string color)
-{
+//vector<Citizen*> City::getCitizensForFavoriteColor(string color)
+//{
     
-}
+//}

@@ -3,6 +3,9 @@
 
 #include <string>
 #include <stdio.h>
+#include <vector>
+#include "Citizen.hpp"
+using namespace std;
 
 class City
 {
@@ -47,6 +50,7 @@ public:
     vector<Citizen*> getCitizensForFavoriteColor(string color);
     
 private:
-    
+    int population;
+    string cityName;
 };
 #endif /* City_hpp */

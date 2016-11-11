@@ -5,6 +5,7 @@
 
 #include <string>
 #include <iostream>
+#include <fstream>
 #include "Citizen.hpp"
 #include "City.hpp"
 using namespace std;
@@ -149,6 +150,5 @@ int main()
     delete katchem;
     delete spokane;
     delete seattle;
-    
     return 0;
 }

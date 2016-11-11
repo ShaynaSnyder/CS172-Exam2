@@ -3,6 +3,7 @@
 
 #include <string>
 #include <stdio.h>
+using namespace std;
 
 class Citizen
 {
@@ -34,6 +35,8 @@ public:
     void setFavoriteColor(string color);
     
 private:
+    int id1;
+    string firstName1, lastName1, color1;
     
 };
 #endif /* Citizen_hpp */
