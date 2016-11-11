@@ -3,9 +3,10 @@
 //10 November 2016
 //Exam 2
 
+#include <string>
 #include <iostream>
-#include "Citizen.h"
-#include "City.h"
+#include "Citizen.hpp"
+#include "City.hpp"
 using namespace std;
 int main()
 {
@@ -18,6 +19,7 @@ int main()
     
     //Check if we need to add citizens to Spokane
     //Bonus point if you can tell me why I picked these names and Ids ;)
+    //These names are all Red Bull Rampage mountain bike competitors
     if (spokane->populationSize() == 0)
     {
         Citizen* brandon = new Citizen(1, "Brandon", "Semenuk", "Green");
@@ -32,7 +34,6 @@ int main()
         Citizen* kurt = new Citizen(4, "Kurt", "Sorge", "Blue");
         spokane->addCitizen(kurt);
         delete kurt;
-        
         Citizen* kyle = new Citizen(5, "Kyle", "Strait", "Pink");
         spokane->addCitizen(kyle);
         delete kyle;
@@ -40,6 +41,7 @@ int main()
     
     //Check if we need to add citizens to Katchem
     //Bonus point if you can tell me why I picked these names ;)
+    //These names are all designers for Apple
     if (katchem->populationSize() == 0)
     {
         Citizen* Bartley = new Citizen(6, "Bartley", "Andre", "Green");

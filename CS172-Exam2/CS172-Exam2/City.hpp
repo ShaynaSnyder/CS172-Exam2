@@ -1,6 +1,7 @@
 #ifndef City_hpp
 #define City_hpp
 
+#include <string>
 #include <stdio.h>
 
 class City
@@ -44,5 +45,8 @@ public:
     //For example, if color is “Blue” this will return all citizens
     //for this city who’s favorite color is Blue.
     vector<Citizen*> getCitizensForFavoriteColor(string color);
+    
+private:
+    
 };
 #endif /* City_hpp */

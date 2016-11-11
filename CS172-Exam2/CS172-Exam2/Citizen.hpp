@@ -1,6 +1,7 @@
 #ifndef Citizen_hpp
 #define Citizen_hpp
 
+#include <string>
 #include <stdio.h>
 
 class Citizen
@@ -31,5 +32,8 @@ public:
     
     //Sets the favorite color for this citizen
     void setFavoriteColor(string color);
+    
+private:
+    
 };
 #endif /* Citizen_hpp */

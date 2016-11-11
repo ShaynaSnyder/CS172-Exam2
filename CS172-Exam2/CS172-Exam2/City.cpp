@@ -1,9 +1,40 @@
-//
-//  City.cpp
-//  CS172-Exam2
-//
-//  Created by Shayna Snyder on 11/10/16.
-//  Copyright © 2016 Shayna Snyder. All rights reserved.
-//
+//I affirm that all code given below was written solely by me, Shayna Snyder,
+//and that any help I received adhered to the rules stated for this exam.
 
+#include <string>
+#include <vector>
 #include "City.hpp"
+#include "Citizen.hpp"
+
+using namespace std;
+
+//defines a function that creates a City object with given name
+City::City(string cityName)
+{
+    
+}
+//defines a function that destroys a city
+City::~City()
+{
+    
+}
+//defines a function that returns the city's name
+string City::getCityName()
+{
+    
+}
+//defines a function that returns the number of citizens in the city
+int City::populationSize()
+{
+    
+}
+//defines a function that returns the citizen at the given index
+Citizen* City::getCitizenAtIndex(int index)
+{
+    
+}
+//defines a function that returns a vector of citizens with given favorite color
+vector<Citizen*> City::getCitizensForFavoriteColor(string color)
+{
+    
+}
