@@ -52,5 +52,6 @@ public:
 private:
     int population;
     string cityName;
+    vector<Citizen> citizens;
 };
 #endif /* City_hpp */
